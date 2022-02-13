@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, TouchableOpacity, Text, StyleSheet, Image} from 'react-native';
 import Colors from '../../common/colors/Colors';
-// import ProgressCircle from 'react-native-progress-circle';
+import ProgressCirzcle from 'react-native-progress-circle';
 import ImagePath from '../../common/images/ImagePath';
 
 function MovieLists(props) {
@@ -21,7 +21,7 @@ function MovieLists(props) {
         <View style={styles.dot} />
       </TouchableOpacity>
       <View style={styles.progressContainer}>
-        {/* <ProgressCircle
+        <ProgressCircle
           percent={item.progress}
           radius={15}
           borderWidth={3}
@@ -34,7 +34,7 @@ function MovieLists(props) {
           }
           shadowColor="#999"
           bgColor={Colors.darkBlue}
-        /> */}
+        />
       </View>
       <Text style={styles.progress}>{item.vote_average}</Text>
     </TouchableOpacity>
